@@ -1,0 +1,127 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Clear Sans","Helvetica Neue",Arial,"Microsoft Yahei",SimSun; }
+
+.clear-fix:after {
+  display: 'table';
+  clear: both; }
+
+.background-wrapper {
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  background-color: #ebebeb; }
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.wrapper {
+  background-color: #bbada0;
+  position: relative; }
+
+.block {
+  position: absolute;
+  background-color: #eee4da;
+  height: 3.2rem;
+  width: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  font-size: 2.13rem;
+  z-index: 3; }
+
+.block.dark {
+  background-color: #bbada0; }
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: inline-block; }
+
+.animate {
+  position: absolute;
+  background-color: #eee4da;
+  height: 3.2rem;
+  width: 3.2rem;
+  line-height: 3.2rem;
+  text-align: center;
+  font-size: 2.13rem;
+  z-index: 99; }
+
+.info-wrapper {
+  height: 3rem; }
+
+.info-wrapper .info {
+  display: inline-block; }
+  .info-wrapper .info:nth-child(1) {
+    float: left;
+    font-size: 1.3rem;
+    color: #776E65; }
+  .info-wrapper .info:nth-child(3) {
+    margin-right: 0.5rem; }
+  .info-wrapper .info:nth-child(2), .info-wrapper .info:nth-child(3) {
+    font-size: 0.8rem;
+    width: 3rem;
+    padding: 0.3rem;
+    background: #af9c8e;
+    float: right;
+    color: white; }
+
+.block.dark {
+  background-color: #bbada0; }
+
+.block.val2 {
+  background-color: #eee4da; }
+
+.block.val4 {
+  background: #ece0c8; }
+
+.block.val4,
+.block.val2 {
+  color: #776E65; }
+
+.block.val8,
+.block.val16,
+.block.val32,
+.block.val64,
+.block.val128,
+.block.val256,
+.block.val512,
+.block.val1024,
+.block.val2048 {
+  color: white; }
+
+.block.val8 {
+  background: #f2b179; }
+
+.block.val16 {
+  background: #f59563; }
+
+.block.val32 {
+  background: #f57c5f; }
+
+.block.val64 {
+  background: #f65d3b; }
+
+.block.val128 {
+  background: #edce71; }
+
+.block.val256 {
+  background: #edcc61; }
+
+.block.val512 {
+  background: #ecc850; }
+
+.block.val1024 {
+  background: #edc53f; }
+
+.block.val2048 {
+  background: #eec22e; }
+
+.block.val4096 {
+  background: #a6c; }
+
+/*# sourceMappingURL=2048.css.map */

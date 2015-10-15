@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>Document</title>
+    <script>
+        var clientWidth = document.documentElement.clientWidth;
+        var fontSize = (clientWidth / 20).toFixed(2);
+        document.documentElement.style.fontSize = fontSize + 'px';
+    </script>
+    <link rel="stylesheet" href="../dist/css/2048.css" inline>
+</head>
+
+<body>
+    <div class="page">
+        <div class="background-wrapper">
+            <div class="info-wrapper">
+                <div class="title info">
+                    2048
+                </div>
+                <div class="best info">
+                    best:
+                    <span class="value">0</span>
+                </div>
+                <div class="score info">
+                    score:
+                    <span class="value">0</span>
+                </div>
+            </div>
+            <div class="wrapper">
+            </div>
+        </div>
+    </div>
+    <script src="../dist/js/2048.js" inline></script>
+</body>
+
+</html>
