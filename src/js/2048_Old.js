@@ -1,3 +1,5 @@
+/*这是旧版Old*/
+
 var pxUnit = 'rem';
 var BLOCK_SIZE = 3.2;
 var PADDING = BLOCK_SIZE / 5;
