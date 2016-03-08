@@ -41,29 +41,31 @@ gulp.task('scripts', function() {
   //---------------main.js
   //PS 仅靠debug: true 是无法生成sourcemaps的
 
+  /* gulp-browserify已经停止更新了
   gulp.src('src/js/main.js')
-    .pipe(browserifyGulp({
-      debug:true
-    }))
-    .pipe(sourcemaps.init({loadMaps: true}))
+  .pipe(browserifyGulp({
+    debug:true
+  }))
+  .pipe(sourcemaps.init({loadMaps: true}))
 
-    //调试完毕才使用 uglify
-    //.pipe(uglify())//.pipe(uglify({ compress: true }))
-    .pipe(sourcemaps.write('./')) // writes .map file
-    .pipe(gulp.dest('dist/js'));
-  /*
+  //调试完毕才使用 uglify
+  //.pipe(uglify())//.pipe(uglify({ compress: true }))
+  .pipe(sourcemaps.write('./')) // writes .map file
+  .pipe(gulp.dest('dist/js'));
+  */
+
+  /*建议使用vinyl的方式来处理browserify*/
   return browserify({
       entries: ['./src/js/main.js'],
       debug: true
     })
   .bundle()
-  .pipe(source('bundle.js'))
-  .pipe(buffer())
+  .pipe(source('bundle.js')) //将普通的流转为vinyl流
+  .pipe(buffer()) //缓存文件数据
   .pipe(sourcemaps.init({ loadMaps: true })) // loads map from browserify file
   .pipe(uglify())
   .pipe(sourcemaps.write('./')) // writes .map file
   .pipe(gulp.dest('./dist/js'));
-  */
 });
 
 gulp.task('html', function() {

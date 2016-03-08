@@ -11,10 +11,10 @@ function Game2048() {
 
   //存储Block 对象
   this.blockList = [
-    [0, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 0]
+    [],
+    [],
+    [],
+    []
   ];
   this.init = function() {
     this.wrapper.style.cssText = [
